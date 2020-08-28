@@ -24,7 +24,7 @@ Josephus::Josephus(int size, int skip) {
 Josephus::~Josephus() {
 	JosephusNode* temp = head;
 
-	while (temp) {
+	while (temp) { 
 		JosephusNode* next = temp->GetNext();
 		delete temp;
 		temp = next;
