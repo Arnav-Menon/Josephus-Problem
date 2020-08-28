@@ -11,6 +11,7 @@ using namespace std;
 
 int main(int agrc, char* argv[]) {
 
+	// this shows files in the directory
 	//char command[10] = "dir";
 	//system(command);
 	//return 0;
