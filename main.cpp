@@ -11,10 +11,6 @@ using namespace std;
 
 int main(int agrc, char* argv[]) {
 
-	// this shows files in the directory
-	//char command[10] = "dir";
-	//system(command);
-	//return 0;
 
 
 	cout << "HELLO" << endl;
@@ -25,7 +21,6 @@ int main(int agrc, char* argv[]) {
 	string dir;
 	string name;
 	ifstream inFile;
-	// make sure file path is accurate
 	string filename = argv[1];
 	cout << filename << endl;
 
@@ -41,12 +36,6 @@ int main(int agrc, char* argv[]) {
 
 	Josephus list;
 	JosephusNode* nameNode = nullptr;
-	//while (getline(inFile, name)) {
-	//	cout << "PLAYER " << id << ": " << name << endl;
-	//	nameNode = new JosephusNode(id, name);
-	//	list.AddPerson(nameNode);
-	//	id++;
-	//}
 
 	cout << "How many people will be participating today? " << endl;
 	cin >> people;
@@ -57,7 +46,6 @@ int main(int agrc, char* argv[]) {
 
 	int numPeople = people;
 	while (getline(inFile, name) && numPeople > 0) {
-		//cout << "PLAYER " << id << ": " << name << endl;
 		nameNode = new JosephusNode(id, name);
 		list.AddPerson(nameNode);
 		id++;
