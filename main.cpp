@@ -7,7 +7,7 @@
 using namespace std;
 
 //void display(JosephusNode*);
-
+ 
 
 int main(int agrc, char* argv[]) {
 
