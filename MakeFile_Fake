@@ -1,0 +1,14 @@
+Joseph.exe : main.o Josephus.o JosephNode.o
+	g++ main.o Josephus.o JosephusNode.o -o Joseph.exe
+
+main.o : main.cpp
+	g++ -Wall -c main.cpp
+
+Josephus.o : Josephus.cpp Josephus.h
+	g++ -Wall -c Josephus.cpp
+
+JosephusNode.o : JosephusNode.cpp JosephusNode.h
+	g++ -Wall -c JoseNode.cpp
+
+clean:
+	rm *.o Joseph.exe
